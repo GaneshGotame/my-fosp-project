@@ -1,0 +1,172 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	background-color: green;
+	background-size: cover;
+	background-position: center;
+	box-sizing: border-box;
+	color: white;
+	list-style: none;
+}
+
+.heading
+{
+	font-family: cursive;
+	background-color: rgb(0, 100, 0);
+	height: 100px;
+	width: 100%;
+	color: #5bcb09;
+	font-size: 45px;
+	text-align: center;
+	border-bottom: 1px solid; #fff;
+}
+
+.menu_bar
+{
+	background-color: rgb(0, 100, 0);
+	text-align: center;
+}
+
+.menu_bar ul
+{
+	display: inline-flex;
+	list-style: none;
+	color: #fff;
+}
+.menu_bar ul li
+{
+	width: 150px;
+	margin: 10px;
+	padding: 10px;
+}
+
+.menu_bar ul li a
+{
+	text-decoration: none;
+	color: #fff;
+}
+
+.active,.menu_bar ul li:hover
+{
+	background: #2bab0d;
+	border-radius: 200px;
+
+}
+
+.sub_menu3
+{
+	display: none;
+}
+.menu_bar ul li:hover .sub_menu3
+{
+	display: block;
+	position: absolute;
+	background-color: rgb(0, 100, 0);
+	margin-top: 15px;
+	margin-left:-15px;
+}
+
+.menu_bar ul li:hover .sub_menu3 ul
+{
+	display: block;
+	margin: 10px;
+}
+
+.menu_bar ul li:hover .sub_menu3 ul li
+{
+	width: 150px;
+	padding: 10px;
+	border-bottom: 1px dotted #fff;
+	border-radius: 5px;
+	text-align: left;
+}
+
+.menu_bar ul li:hover .sub_menu3 ul li:last-child
+{
+	border-bottom: none;
+}
+
+/*.indeximage{
+	background-color: green;
+}
+*/
+.indeximage p{
+	float: center;
+	margin-left: 30%;
+	width: 40%;
+	height: 550px;
+	background-color: green;
+	background-image: url(slider1.jpg);
+	background-size: 100% 100%;
+	box-shadow: 1px 2px 10px 5px green;
+	animation: slider 30s infinite linear;
+}
+
+@keyframes indeximage{
+	0%{background-image: url(slider1.jpg);}
+	35%{ background-image:url(slider2.jpg);}
+	75%{ background-image:url(slider1.jpg);}
+}
+
+
+.footer p
+{
+	float: right;
+	background-color: green;
+	size: 20px;
+	color: white;
+}
+
+.main table
+{
+	padding: 10px;
+	align-item: center;
+	background-color: green;
+	font-size: 20px;
+	color: white;
+	box-shadow: 1px 2px 10px 5px white;
+
+}
+
+.main table td textarea
+{
+	width: 600px;
+	height: 60px;
+	
+}
+
+table
+{
+	font-size: 20px;
+}
+
+.adminchoice a
+{
+	padding: 10px 10px;
+	list-style: none;
+	text-decoration: none;
+	font-size: 20px;
+	background-color: rgb(0, 300, 100);
+	display: inline-flex;
+	margin: 5px;
+	border-radius: 10px;
+	width: 200px;
+
+}
+.adminchoice a:hover
+{
+	padding: 10px 10px;
+	list-style: none;
+	text-decoration: none;
+	font-size: 20px;
+	background-color: rgb(0, 500, 200);
+	display: inline-flex;
+	margin: 5px;
+	border-radius: 10px;
+	width: 200px;
+
+}
